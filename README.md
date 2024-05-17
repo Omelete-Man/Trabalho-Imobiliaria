@@ -1,44 +1,26 @@
-# Trabalho-Imobiliaria
+# Descrição do Trabalho-Imobiliaria
 
-# Descrição do trabalho 
+Desenvolver um programa em java que permita o controle dos imóveis disponíveis em uma imobiliária que trabalha exclusivamente com vendas. A imobiliária deve possuir uma lista de imóveis, sendo que cada imóvel possui as seguintes características: Código, Área construída, Área total, Número de quartos, Tipo (Casa ou Apartamento), Preço, e Endereço (Cidade e Bairro). O programa deve permitir que o usuário realize diversas operações sobre a lista de imóveis da imobiliária até o momento em que ele deseje sair do sistema (última opção do menu oferecido). As diferentes funcionalidades do sistema e os pesos na pontuação final do trabalho estão descritas na tabela abaixo:
 
-Desenvolver um programa em java que permita o controle dos imóveis disponíveis em uma
-imobiliária que trabalha exclusivamente com vendas. A imobiliária deve possuir uma lista de
-imóveis, sendo que cada imóvel possui as seguintes características: Código, Área construída, Área
-total, Número de quartos, Tipo (Casa ou Apartamento), Preço, e Endereço (Cidade e Bairro).
-O programa deve permitir que o usuário realize diversas operações sobre a lista de imóveis da
-imobiliária até o momento em que ele deseje sair do sistema (última opção do menu oferecido). As
-diferentes funcionalidades do sistema e os pesos na pontuação final do trabalho estão descritas na
-tabela abaixo:
+1- Cadastro de um novo imóvel. Nesse cadastro, o usuário deve fornecer todas as informações referentes ao novo imóvel que está entrando na imobiliária.
 
-  1- Cadastro de um novo imóvel. Nesse cadastro, o usuário deve fornecer todas
-as informações referentes ao novo imóvel que está entrando na imobiliária.
+2- Listagem de todos os imóveis
 
-  2- Listagem de todos os imóveis
-  
-  3- Listagem dos imóveis que atende uma determinada condição estabelecida
-pelo usuário:
+3- Listagem dos imóveis que atende uma determinada condição estabelecida pelo usuário:
 
-    1- Tipo do imóvel (Casa ou Apartamento)
+    3.1- Tipo do imóvel (Casa ou Apartamento)
     
-    2- Disponíveis em uma determinada cidade (o programa deve oferecer para o
-usuário as cidades existentes)
+    3.2- Disponíveis em uma determinada cidade (o programa deve oferecer para o usuário as cidades existentes)
 
-    3- Disponíveis em um determinado bairro de uma determinada cidade (o
-programa deve oferecer para o usuário os bairros disponíveis e suas
-respectivas cidades para escolha).
+    3.3- Disponíveis em um determinado bairro de uma determinada cidade (o programa deve oferecer para o usuário os bairros disponíveis e suas respectivas cidades para escolha).
 
-    4- Pertencentes a uma determinada faixa de preço (as faixa de preços podem ser
-fixas dentro do programa – ex: de 0 a R$100.000,00 – de R$100.000,01 a R$
-200.000,00 – acima de 200.000,01)
+    3.4- Pertencentes a uma determinada faixa de preço (as faixa de preços podem ser fixas dentro do programa – ex: de 0 a R$100.000,00 – de R$100.000,01 a R$ 200.000,00 – acima de 200.000,01)
 
-    5- Número mínimo de quartos desejado
+    3.5- Número mínimo de quartos desejado
     
-  4- Exclusão de Imóveis. Permitir que o usuário exclua um determinado imóvel a
-partir de seu código.
+4- Exclusão de Imóveis. Permitir que o usuário exclua um determinado imóvel a partir de seu código.
 
-  5- Alteração de Imóveis. Permitir que o usuário altere um determinado imóvel a
-partir de seu código.
+5- Alteração de Imóveis. Permitir que o usuário altere um determinado imóvel a partir de seu código.
 
 # Sobre as classes:
 
@@ -54,7 +36,4 @@ tipo (int - Casa, Apartamento - ex: 0 – Casa, 1 – Apartamento)
 preco (float)
 localizacao (Endereco)
 
-Para cada classe, implementar os atributos private e os métodos set e get para esses atributos.
-Para facilitar a implementação do trabalho, algumas características das Classes estão sendo
-omitidas. Por exemplo, a Classe Endereço não possui informações de Estado, Rua, ou Número do
-imóvel.
+Para cada classe, implementar os atributos private e os métodos set e get para esses atributos. Para facilitar a implementação do trabalho, algumas características das Classes estão sendo omitidas. Por exemplo, a Classe Endereço não possui informações de Estado, Rua, ou Número do imóvel.
