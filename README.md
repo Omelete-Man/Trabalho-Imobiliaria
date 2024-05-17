@@ -44,8 +44,10 @@ partir de seu código.
 
 Classe Imobiliária:
 Atributo: lista_de_imoveis (Imovel)
+
 Classe Endereco:
 Atributos: cidade (String), Bairro (String)
+
 Classe Imovel:
 Atributos: codigo (int), areaconstruida (float), areatotal(float), numeroquartos (int),
 tipo (int - Casa, Apartamento - ex: 0 – Casa, 1 – Apartamento)
