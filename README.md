@@ -10,6 +10,7 @@ O programa deve permitir que o usuário realize diversas operações sobre a lis
 imobiliária até o momento em que ele deseje sair do sistema (última opção do menu oferecido). As
 diferentes funcionalidades do sistema e os pesos na pontuação final do trabalho estão descritas na
 tabela abaixo:
+
   1- Cadastro de um novo imóvel. Nesse cadastro, o usuário deve fornecer todas
 as informações referentes ao novo imóvel que está entrando na imobiliária.
   2- Listagem de todos os imóveis
