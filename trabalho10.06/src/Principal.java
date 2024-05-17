@@ -1,5 +1,178 @@
-import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
+class Endereco {
+    private String cidade;
+    private String bairro;
+
+    public Endereco(String cidade, String bairro) {
+        this.cidade = cidade;
+        this.bairro = bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    @Override
+    public String toString() {
+        return "Cidade: " + cidade + ", Bairro: " + bairro;
+    }
+}
+
+class Imovel {
+    private int codigo;
+    private float areaConstruida;
+    private float areaTotal;
+    private int numeroQuartos;
+    private int tipo; // 0 - Casa, 1 - Apartamento
+    private float preco;
+    private Endereco endereco;
+
+    public Imovel(int codigo, float areaConstruida, float areaTotal, int numeroQuartos, int tipo, float preco, Endereco endereco) {
+        this.codigo = codigo;
+        this.areaConstruida = areaConstruida;
+        this.areaTotal = areaTotal;
+        this.numeroQuartos = numeroQuartos;
+        this.tipo = tipo;
+        this.preco = preco;
+        this.endereco = endereco;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public float getPreco() {
+        return preco;
+    }
+
+    public int getNumeroQuartos() {
+        return numeroQuartos;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    @Override
+    public String toString() {
+        return "Código: " + codigo + ", Área Construída: " + areaConstruida + ", Área Total: " + areaTotal + 
+               ", Número de Quartos: " + numeroQuartos + ", Tipo: " + (tipo == 0 ? "Casa" : "Apartamento") + 
+               ", Preço: " + preco + ", Endereço: [" + endereco + "]";
+    }
+}
+
+class Imobiliaria {
+    private List<Imovel> imoveis;
+
+    public Imobiliaria() {
+        imoveis = new ArrayList<>();
+    }
+
+    public void cadastrarImovel(Imovel imovel) {
+        imoveis.add(imovel);
+    }
+
+    public void listarImoveis() {
+        if (imoveis.isEmpty()) {
+            System.out.println("Nenhum imóvel cadastrado.");
+        } else {
+            for (Imovel imovel : imoveis) {
+                System.out.println(imovel);
+            }
+        }
+    }
+
+    public List<Imovel> buscarImoveisPorTipo(int tipo) {
+        List<Imovel> resultado = new ArrayList<>();
+        for (Imovel imovel : imoveis) {
+            if (imovel.getTipo() == tipo) {
+                resultado.add(imovel);
+            }
+        }
+        return resultado;
+    }
+
+    public List<Imovel> buscarImoveisPorCidade(String cidade) {
+        List<Imovel> resultado = new ArrayList<>();
+        for (Imovel imovel : imoveis) {
+            if (imovel.getEndereco().getCidade().equalsIgnoreCase(cidade)) {
+                resultado.add(imovel);
+            }
+        }
+        return resultado;
+    }
+
+    public List<Imovel> buscarImoveisPorBairroECidade(String bairro, String cidade) {
+        List<Imovel> resultado = new ArrayList<>();
+        for (Imovel imovel : imoveis) {
+            if (imovel.getEndereco().getBairro().equalsIgnoreCase(bairro) &&
+                imovel.getEndereco().getCidade().equalsIgnoreCase(cidade)) {
+                resultado.add(imovel);
+            }
+        }
+        return resultado;
+    }
+
+    public List<Imovel> buscarImoveisPorFaixaDePreco(float precoMin, float precoMax) {
+        List<Imovel> resultado = new ArrayList<>();
+        for (Imovel imovel : imoveis) {
+            if (imovel.getPreco() >= precoMin && imovel.getPreco() <= precoMax) {
+                resultado.add(imovel);
+            }
+        }
+        return resultado;
+    }
+
+    public List<Imovel> buscarImoveisPorNumeroDeQuartos(int numeroMinQuartos) {
+        List<Imovel> resultado = new ArrayList<>();
+        for (Imovel imovel : imoveis) {
+            if (imovel.getNumeroQuartos() >= numeroMinQuartos) {
+                resultado.add(imovel);
+            }
+        }
+        return resultado;
+    }
+
+    public boolean excluirImovel(int codigo) {
+        for (Imovel imovel : imoveis) {
+            if (imovel.getCodigo() == codigo) {
+                imoveis.remove(imovel);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Imovel buscarImovelPorCodigo(int codigo) {
+        for (Imovel imovel : imoveis) {
+            if (imovel.getCodigo() == codigo) {
+                return imovel;
+            }
+        }
+        return null;
+    }
+
+    public boolean alterarImovel(int codigo, Imovel novoImovel) {
+        for (int i = 0; i < imoveis.size(); i++) {
+            if (imoveis.get(i).getCodigo() == codigo) {
+                imoveis.set(i, novoImovel);
+                return true;
+            }
+        }
+        return false;
+    }
+}
 
 public class Principal {
     public static void main(String[] args) {
@@ -169,3 +342,4 @@ public class Principal {
         }
     }
 }
+
