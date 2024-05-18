@@ -5,13 +5,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
-public class ImobiliariaGUI {
+public class InterfaceGUI {
     private Imobiliaria imobiliaria;
     private JFrame frame;
     private JTable table;
     private DefaultTableModel tableModel;
 
-    public ImobiliariaGUI() {
+    public InterfaceGUI() {
         imobiliaria = new Imobiliaria();
         initialize();
     }
@@ -300,7 +300,7 @@ public class ImobiliariaGUI {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new ImobiliariaGUI();
+                new InterfaceGUI();
             }
         });
     }
