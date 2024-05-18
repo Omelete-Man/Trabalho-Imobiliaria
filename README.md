@@ -12,9 +12,11 @@ Desenvolver um programa em java que permita o controle dos imóveis disponíveis
     
     2- Disponíveis em uma determinada cidade (o programa deve oferecer para o usuário as cidades existentes)
 
-    3- Disponíveis em um determinado bairro de uma determinada cidade (o programa deve oferecer para o usuário os bairros disponíveis e suas respectivas cidades para escolha).
+    3- Disponíveis em um determinado bairro de uma determinada cidade (o programa deve oferecer para o usuário 
+    os bairros disponíveis e suas respectivas cidades para escolha).
 
-    4- Pertencentes a uma determinada faixa de preço (as faixa de preços podem ser fixas dentro do programa – ex: de 0 a R$100.000,00 – de R$100.000,01 a R$ 200.000,00 – acima de 200.000,01)
+    4- Pertencentes a uma determinada faixa de preço (as faixa de preços podem ser fixas dentro do programa – ex: 
+    de 0 a R$100.000,00 – de R$100.000,01 a R$ 200.000,00 – acima de 200.000,01)
 
     5- Número mínimo de quartos desejado
     
