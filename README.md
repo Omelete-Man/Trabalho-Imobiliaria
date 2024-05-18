@@ -38,4 +38,6 @@ tipo (int - Casa, Apartamento - ex: 0 – Casa, 1 – Apartamento)
 preco (float)
 localizacao (Endereco)
 
+# Obs:
+
 Para cada classe, implementar os atributos private e os métodos set e get para esses atributos. Para facilitar a implementação do trabalho, algumas características das Classes estão sendo omitidas. Por exemplo, a Classe Endereço não possui informações de Estado, Rua, ou Número do imóvel.
