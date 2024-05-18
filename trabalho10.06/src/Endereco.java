@@ -2,13 +2,13 @@ public class Endereco {
     private String cidade;
     private String bairro;
 
-    // Construtor para inicializar cidade e bairro
+    // Construtor
     public Endereco(String cidade, String bairro) {
         this.cidade = cidade;
         this.bairro = bairro;
     }
 
-    // Getters e setters para os atributos
+    // Getters e Setters
     public String getCidade() {
         return cidade;
     }
@@ -25,9 +25,10 @@ public class Endereco {
         this.bairro = bairro;
     }
 
-    // Método toString para facilitar a impressão do endereço
+    // Método toString para exibir as informações do endereço
     @Override
     public String toString() {
-        return bairro + ", " + cidade;
+        return "Cidade: " + cidade + ", Bairro: " + bairro;
     }
 }
+
