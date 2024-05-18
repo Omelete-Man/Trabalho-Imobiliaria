@@ -26,18 +26,18 @@ Desenvolver um programa em java que permita o controle dos imóveis disponíveis
 
 # Sobre as classes:
 
-## Classe Imobiliária:
+Classe Imobiliária:
 Atributo: lista_de_imoveis (Imovel)
-
-## Classe Endereco:
+________________________________________________________________________________________________________________
+Classe Endereco:
 Atributos: cidade (String), Bairro (String)
-
-## Classe Imovel:
+_________________________________________________________________________________________________________________
+Classe Imovel:
 Atributos: codigo (int), areaconstruida (float), areatotal(float), numeroquartos (int),
 tipo (int - Casa, Apartamento - ex: 0 – Casa, 1 – Apartamento)
 preco (float)
 localizacao (Endereco)
-
+_________________________________________________________________________________________________________________
 # Obs:
 
 Para cada classe, implementar os atributos private e os métodos set e get para esses atributos. Para facilitar a implementação do trabalho, algumas características das Classes estão sendo omitidas. Por exemplo, a Classe Endereço não possui informações de Estado, Rua, ou Número do imóvel.
