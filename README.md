@@ -1,4 +1,4 @@
-# Descrição do Trabalho-Imobiliaria 🧑🏼‍💻
+# 🧑🏼‍💻Descrição do Trabalho-Imobiliaria 🧑🏼‍💻
 
 Desenvolver um programa em java que permita o controle dos imóveis disponíveis em uma imobiliária que trabalha exclusivamente com vendas. A imobiliária deve possuir uma lista de imóveis, sendo que cada imóvel possui as seguintes características: Código, Área construída, Área total, Número de quartos, Tipo (Casa ou Apartamento), Preço, e Endereço (Cidade e Bairro). O programa deve permitir que o usuário realize diversas operações sobre a lista de imóveis da imobiliária até o momento em que ele deseje sair do sistema (última opção do menu oferecido). As diferentes funcionalidades do sistema e os pesos na pontuação final do trabalho estão descritas na tabela abaixo:
 
@@ -44,6 +44,6 @@ tipo (int - Casa, Apartamento - ex: 0 – Casa, 1 – Apartamento)
 preco (float)
 localizacao (Endereco)
 
-# Obs:
+# 🎯Obs:
 
 Para cada classe, implementar os atributos private e os métodos set e get para esses atributos. Para facilitar a implementação do trabalho, algumas características das Classes estão sendo omitidas. Por exemplo, a Classe Endereço não possui informações de Estado, Rua, ou Número do imóvel.
